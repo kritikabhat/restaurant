@@ -11,18 +11,23 @@ tabContainer.appendChild(menuParent)
 tabContainer.appendChild(contactParent)
 
 nav.addEventListener("click", (event) => {
+    if(!event.target.matches("button")) return
     workTabs(event)
 })
 
 function workTabs(event) {
     console.log(event.target.textContent)
-    // need to put this into :active CSS or something
-    // event.target.style.backgroundColor = "#DE638A"
-    // event.target.style.color = "white"
 
     const tabs = document.getElementsByClassName("tab")
     for(let i = 0; i < tabs.length; i++) {
         tabs[i].style.display = "none"
     } 
-    document.getElementById(`${event.target.textContent}`.toLowerCase()).style.display = "block"
+    const buttons = document.getElementsByTagName("button")
+    for (let i = 0; i < buttons.length; i++) {
+        buttons[i].style.backgroundColor = "#f3d9e5"
+        buttons[i].style.color = "black"
+    }
+    event.target.style.backgroundColor = "#DE638A"
+    event.target.style.color = "white"
+    document.getElementById(`${event.target.textContent}`.toLowerCase()).style.display = "flex"
 }

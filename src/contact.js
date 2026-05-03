@@ -8,10 +8,9 @@ contactHeading.textContent = "Contact us! 🌸"
 const contactDiv1 = document.createElement("div")
 contactDiv1.className = "centerDiv"
 const contactPara1 = document.createElement("p")
-contactPara1.textContent = `Peter Potter<br>
-                            Owner,
-                            123-456-7890
-                            some-email@email.com`
+contactPara1.textContent = `Donec sed tempus ipsum. Sed turpis augue, 
+            tristique in cursus et, condimentum at ipsum. Praesent libero
+             nisl, semper nec cursus eget, convallis id orci.`
 
 const contactDiv2 = document.createElement("div")
 contactDiv2.className = "bottomDiv"

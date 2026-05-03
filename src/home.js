@@ -1,6 +1,7 @@
 const homeParent = document.createElement("div")
 homeParent.className = "tab"
 homeParent.id = "home"
+homeParent.style.display = "flex"
 
 const homeHeading = document.createElement("h1")
 homeHeading.textContent = "Welcome to my restaurant! 🌻"
@@ -17,14 +18,13 @@ homePara1.textContent = `Lorem ipsum dolor sit amet, consectetur adipiscing elit
 const homeDiv2 = document.createElement("div")
 homeDiv2.className = "bottomDiv"
 const homePara2 = document.createElement("p")
-homePara2.textContent = `Hours<br>
-        Sunday: 8am - 8pm<br>
-        Monday: 6am - 6pm<br>
-        Tuesday: 6am - 6pm<br>
-        Wednesday: 6am - 6pm<br>
-        Thursday: 6am - 10pm<br>
-        Friday: 6am - 10pm<br>
-        Saturday: 8am - 10pm`
+homePara2.textContent = `Morbi placerat erat non elit finibus, id eleifend
+                 ipsum sodales. Duis vitae ipsum est. Cras mollis, nulla 
+                 quis suscipit tincidunt, mauris nisi gravida sem, vitae 
+                 varius ipsum erat vel nulla. Quisque auctor dapibus sem 
+                 eget vulputate. Sed vel ipsum eget elit scelerisque 
+                 accumsan. Integer vitae mollis nisi. Mauris ligula tortor, 
+                 posuere a feugiat sed, dignissim vitae dui.`
 
 homeDiv1.appendChild(homePara1)
 homeDiv2.appendChild(homePara2)
@@ -34,6 +34,3 @@ homeParent.appendChild(homeDiv1)
 homeParent.appendChild(homeDiv2)
 
 export { homeParent }
-
-// h1, div1 and div2 will be appended to tabContainer div when Home is clicked
-// each tab will have a centerDiv and bottomDiv

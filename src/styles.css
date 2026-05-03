@@ -4,6 +4,7 @@
     padding: 0;
     height: 100%;
     line-height: 1.5;
+    text-align: center;
 }
 body {
     display: grid;
@@ -25,17 +26,22 @@ button {
     padding: 1rem;
     background-color: #f3d9e5;
 }
-button:hover {
-    background-color: #f7b9c4;
-}
-button:focus {
-    background-color: #f3d9e5;
-}
-button:active {
-    background-color: #DE638A;
-    color: white;
-}
 .tabContainer {
     background-color: #C6BADE;
     margin: 0.5rem 3.5rem 0rem 3.5rem;
+}
+.tab {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    gap: 1rem;
+}
+.tab div {
+    border: 0.3rem solid #4a3267;
+    padding: 1rem;
+}
+.tab h1 {
+    border: 0.3rem solid #4a3267;
+    padding: 1rem;
+    font-size: 3rem;
 }
