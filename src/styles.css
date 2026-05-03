@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    line-height: 1.5;
+    text-align: center;
+}
+body {
+    display: grid;
+    grid-template-rows: 0.7fr 5fr;
+    background-color: #f3d9e5;
+}
+header {
+    padding: 1rem;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+section {
+    block-size: 100%;
+}
+button {
+    padding: 1rem;
+    background-color: #f3d9e5;
+}
+.tabContainer {
+    background-color: #C6BADE;
+    margin: 0.5rem 3.5rem 0rem 3.5rem;
+}
+.tab {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    gap: 1rem;
+}
+.tab div {
+    border: 0.3rem solid #4a3267;
+    padding: 1rem;
+}
+.tab h1 {
+    border: 0.3rem solid #4a3267;
+    padding: 1rem;
+    font-size: 3rem;
+}
