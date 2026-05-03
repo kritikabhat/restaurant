@@ -1,3 +1,4 @@
+/* 
 const h1 = document.createElement("h1")
 h1.textContent = `Welcome to El Paso Mexican restaurant`
 
@@ -30,3 +31,4 @@ content.appendChild(p1)
 content.appendChild(p2)
 
 export default content
+*/
